@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="craftteams"
+version="1.0.0"
+displayName="Craft Teams"
+description='''Bloqueia o craft de itens de mods por time. Um painel de administracao (/craftteams) escolhe quais mods cada time pode craftar.'''
+
+[[mixins]]
+config="craftteams.mixins.json"
+
+[[dependencies.craftteams]]
+modId="neoforge"
+type="required"
+versionRange="[21.1,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.craftteams]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.22)"
+ordering="NONE"
+side="BOTH"
